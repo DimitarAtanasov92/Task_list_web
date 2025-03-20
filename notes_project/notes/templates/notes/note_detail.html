@@ -1,0 +1,13 @@
+{% extends 'notes/base.html' %}
+
+{% block title %}Note Detail{% endblock %}
+
+{% block content %}
+    <div class="add_comment_form">
+        <h2>{{ note.title }}</h2>
+        <p>{{ note.content }}</p>
+        <a href="{% url 'note_list' %}">
+            <button>Back to List</button>
+        </a>
+    </div>
+{% endblock %}
